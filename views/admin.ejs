@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <title>Admin | Mosazghi</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./stylesheets/admin/admin.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/profile-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="tittel">Admin</h1>
+    </header>
+    <div class="form-wrapper">
+      <form action="#" method="post">
+        <div class="emne-wrapper">
+          <label for="emne">Emne:</label>
+          <input type="text" id="emne" name="emne" />
+        </div>
+        <div class="semester-wrapper">
+          <label for="semester">Semester:</label>
+          <select name="semester" id="semester">
+            <optgroup label="1. Klasse">
+              <option>H22</option>
+              <option>V23</option>
+            </optgroup>
+            <optgroup label="2. Klasse">
+              <option>H23</option>
+              <option>V24</option>
+            </optgroup>
+            <optgroup label="3. Klasse">
+              <option>H24</option>
+              <option>V25</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="beskrivelse-wrapper">
+          <label for="beskrivelse">Beskrivelse:</label>
+          <textarea name="beskrivelse"></textarea>
+        </div>
+        <div class="karakter-wrapper">
+          <label for="karakter">Karakter:</label>
+          <select name="karakter" id="karakter">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>E</option>
+            <option>Bestått</option>
+          </select>
+        </div>
+        <div class="link-wrapper">
+          <label for="link">Link:</label>
+          <input type="url" id="link" name="link" />
+        </div>
+        <div class="emnetype-wrapper">
+          <label for="emnetype">Emnetype:</label>
+          <select name="emnetype" id="emnetype">
+            <optgroup label="Obligatorisk">
+              <option>O</option>
+            </optgroup>
+            <optgroup label="Valgfri">
+              <option>E</option>
+            </optgroup>
+          </select>
+        </div>
+        <div id="button-wrapper">
+          <input id="send-button" type="submit" value="Opprett" />
+        </div>
+      </form>
+    </div>
+    <script src="./javascripts/admin.js"></script>
+  </body>
+</html>

@@ -51,15 +51,22 @@
   padding: 1rem;
 }
 
-/* .fag-grid > div > .fag-navn {
-  flex-grow: 4.5;
-} */
+.fag-navn {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.fag-karakter {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 /*TODO FIX THIS*/
 .fag-grid > div > .fag-beskrivelse {
   flex-grow: 115;
   padding: 1rem;
 }
- .fag-container:hover {
+.fag-container:hover {
   transform: scale(1.02);
 }
 /* TODO -- nav instead? */

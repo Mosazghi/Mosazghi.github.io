@@ -4,9 +4,17 @@
     <title>Portfoilo | Mosazghi</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./stylesheets/index.css" />
-    <link rel="stylesheet" type="text/css" href="./stylesheets/semester.css" />
-    <link rel="icon" type="image/x-icon" href="/src/assets/profile-icon.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./stylesheets/index/index.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./stylesheets/index/semester.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/profile-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +24,7 @@
   </head>
   <body>
     <header>
-      <h1 class="tittel">Mosazghi | Elektroingeniørstudent, NTNU.</h1>
+      <h1 class="tittel">Mosazghi | Elektroingeniørstudent, NTNU</h1>
     </header>
     <div class="kort-om-meg">
       <h2>Kort om meg</h2>
@@ -36,7 +44,7 @@
           Takk for at du tok deg tid til å besøke siden min. Jeg håper du finner
           porteføljen min informativ og engasjerende. Ta gjerne
           <a href="mailto:mosazghi.y.tesfazghi@ntnu.no">kontakt</a> dersom du
-          har spørsmål eller ønsker å diskutere potensielle muligheter
+          har spørsmål eller ønsker å diskutere potensielle muligheter.
         </p>
       </div>
     </div>
@@ -44,229 +52,12 @@
       <div class="alle-semester-container">
         <section class="semester-container">
           <button type="button" class="semester-button">1. Semester</button>
-          <div class="fag-grid">
-            <div class="fag-container">
-              <div class="fag-navn">
-                <h2>Matematiske metoder 1</h2>
-              </div>
-              <div class="fag-beskrivelse">
-                <p>Matriseregning, derivasjon, integrasjon (R2 stoff)</p>
-              </div>
-              <div class="fag-karakter">
-                <h5>Karakter: A</h5>
-              </div>
-              <div class="fag-info">
-                <a
-                  class="les-mer"
-                  href="https://www.ntnu.no/studier/emner/IMAG1001#tab=omEmnet"
-                  target="_blank"
-                  >Les mer</a
-                >
-                <div class="emne-type">
-                  <abbr title="Obligatorisk emne">O</abbr>
-                </div>
-              </div>
-            </div>
-            <div class="fag-container">
-              <div class="fag-navn">
-                <h2>Elektroteknikk 1 - del 1 av 2</h2>
-              </div>
-              <div class="fag-beskrivelse">
-                <p>
-                  Resistive kretser, node- og maskestrømanalyse, RL-, RC og
-                  RLC-kretser
-                </p>
-              </div>
-              <div class="fagr-karakter">
-                <h5>Karakter: -</h5>
-              </div>
-              <div class="fag-info">
-                <a
-                  class="les-mer"
-                  href="https://www.ntnu.no/studier/emner/IELEG1001/2022#tab=omEmnet"
-                  target="_blank"
-                  >Les mer</a
-                >
-                <div class="emne-type">
-                  <abbr title="Obligatorisk emne">O</abbr>
-                </div>
-              </div>
-            </div>
-            <div class="fag-container">
-              <div class="fag-navn">
-                <h2>Datateknikk - del 1 av 2</h2>
-              </div>
-              <div class="fag-beskrivelse">
-                <p>
-                  Logiske kretser og kombinatoriske kretser, programmering i C
-                </p>
-              </div>
-              <div class="fag-karakter">
-                <h5>Karakter: -</h5>
-              </div>
-              <div class="fag-info">
-                <a
-                  class="les-mer"
-                  href="https://www.ntnu.no/studier/emner/IELEG1002/2022#tab=omEmnet"
-                  target="_blank"
-                  >Les mer</a
-                >
-                <div class="emne-type">
-                  <abbr title="Obligatorisk emne">O</abbr>
-                </div>
-              </div>
-            </div>
-            <div class="fag-container">
-              <div class="fag-navn">
-                <h2>Ingeniørfaglig innføringsemne</h2>
-              </div>
-              <div class="fag-beskrivelse">
-                <p>
-                  Etikk og teknologi, ingeniørens rolle i samfunnet,
-                  programmering i Python, Arduino smarthus prosjekt
-                </p>
-              </div>
-              <div class="fag-karakter">
-                <h5>Karakter: Bestått</h5>
-              </div>
-              <div class="fag-info">
-                <a
-                  class="les-mer"
-                  href="https://www.ntnu.no/studier/emner/IMAG1001#tab=omEmnet"
-                  target="_blank"
-                  >Les mer</a
-                >
-                <div class="emne-type">
-                  <abbr title="Obligatorisk emne">O</abbr>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="fag-grid" id="H22"></div>
         </section>
-        <div class="semester-container">
+        <section class="semester-container">
           <button type="button" class="semester-button">2. Semester</button>
-          <div class="fag-grid">
-            <div class="fag-container">
-              <div class="fag-navn">
-                <h2>Matematiske metoder 2</h2>
-              </div>
-              <div class="fag-beskrivelse">
-                <p>
-                  Komplekse tall, diff.likninger, taylor/maclaurin rekker,
-                  partiell derivasjon, laplace og fourier
-                </p>
-              </div>
-              <div class="fag-karakter">
-                <h5>Karakter: -</h5>
-              </div>
-              <div class="fag-info">
-                <a
-                  class="les-mer"
-                  href="https://www.ntnu.no/studier/emner/IMAG2011/2022#tab=omEmnet"
-                  target="_blank"
-                  >Les mer</a
-                >
-                <div class="emne-type">
-                  <abbr title="Obligatorisk emne">O</abbr>
-                </div>
-              </div>
-            </div>
-            <div class="fag-container">
-              <div class="fag-navn">
-                <h2>Elektroteknikk 1 - del 2 av 2</h2>
-              </div>
-              <div class="fag-beskrivelse">
-                <p>AC- og magnetisk koblede kretser, trefase</p>
-              </div>
-              <div class="fagr-karakter">
-                <h5>Karakter: -</h5>
-              </div>
-              <div class="fag-info">
-                <a
-                  class="les-mer"
-                  href="https://www.ntnu.no/studier/emner/IELEG1001/2022#tab=omEmnet"
-                  target="_blank"
-                  >Les mer</a
-                >
-                <div class="emne-type">
-                  <abbr title="Obligatorisk emne">O</abbr>
-                </div>
-              </div>
-            </div>
-            <div class="fag-container">
-              <div class="fag-navn">
-                <h2>Datateknikk - del 2 av 2</h2>
-              </div>
-              <div class="fag-beskrivelse">
-                <p>
-                  Et stort gruppeprosjek, videreutvikling av smarthussystemer.
-                  Arduino, ESP32, IoT
-                </p>
-              </div>
-              <div class="fag-karakter">
-                <h5>Karakter: -</h5>
-              </div>
-              <div class="fag-info">
-                <a
-                  class="les-mer"
-                  href="https://www.ntnu.no/studier/emner/IELEG1002/2022#tab=omEmnet"
-                  target="_blank"
-                  >Les mer</a
-                >
-                <div class="emne-type">
-                  <abbr title="Obligatorisk emne">O</abbr>
-                </div>
-              </div>
-            </div>
-            <div class="fag-container">
-              <div class="fag-navn">
-                <h2>Fysikk/kjemi</h2>
-              </div>
-              <div class="fag-beskrivelse">
-                <p>Elektromagnetisme og generell kjemi</p>
-              </div>
-              <div class="fag-karakter">
-                <h5>Karakter: -</h5>
-              </div>
-              <div class="fag-info">
-                <a
-                  class="les-mer"
-                  href="https://www.ntnu.no/studier/emner/IFYKJG1001/2022#tab=omEmnet"
-                  target="_blank"
-                  >Les mer</a
-                >
-                <div class="emne-type">
-                  <abbr title="Obligatorisk emne">O</abbr>
-                </div>
-              </div>
-            </div>
-            <div class="fag-container">
-              <div class="fag-navn">
-                <h2>Objektorientert programmering</h2>
-              </div>
-              <div class="fag-beskrivelse">
-                <p>
-                  Prinsippene i objekt-orientering innføring i språkmekanismer i
-                  C++
-                </p>
-              </div>
-              <div class="fag-karakter">
-                <h5>Karakter: -</h5>
-              </div>
-              <div class="fag-info">
-                <a
-                  class="les-mer"
-                  href="https://www.ntnu.no/studier/emner/PROG1003#tab=omEmnet"
-                  target="_blank"
-                  >Les mer</a
-                >
-                <div class="emne-type">
-                  <abbr title="Ekstra/valgfritt">E</abbr>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <div class="fag-grid" id="V23"></div>
+        </section>
       </div>
     </main>
     <footer>
