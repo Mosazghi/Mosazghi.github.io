@@ -13,7 +13,7 @@ form.addEventListener("submit", async (e) => {
     emnetype: formData.get("emnetype"),
   };
 
-  const res = await fetch("http://localhost:3000/admin/adminDashboard", {
+  const res = await fetch("http://10.0.0.13:3000/admin/adminDashboard", {
     method: "POST",
     headers: {
       "Content-type": "application/json; charset=UTF-8",

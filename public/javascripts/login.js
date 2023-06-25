@@ -8,7 +8,7 @@ form.addEventListener("submit", async (e) => {
   };
   console.log("SENDT: ", data);
 
-  await fetch("http://localhost:3000/login", {
+  await fetch("http://10.0.0.13:3000/login", {
     method: "POST",
     headers: {
       "Content-type": "application/json; charset=UTF-8",

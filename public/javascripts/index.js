@@ -17,7 +17,7 @@ const setFag = async () => {
     const fagGrid = fagGrids[i];
 
     const res = await fetch(
-      "http://localhost:3000/admin/adminDashboard/alleFag",
+      "https://mosazghi.codes/admin/adminDashboard/alleFag",
       {
         method: "GET",
       }
