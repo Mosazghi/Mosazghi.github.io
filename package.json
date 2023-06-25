@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
-    "build": "npm  build"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "axios": "^1.4.0",
