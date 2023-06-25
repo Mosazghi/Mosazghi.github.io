@@ -8,9 +8,8 @@ const connectDB = require("./config/db.config");
 const createAdminUser = require("./controllers/adminController");
 const initializePassport = require("./config/passport");
 const PORT = 3000;
-
 const app = express();
-connectDB();
+connectDB(process.env.DATABASE_URL);
 console.log("using", process.env.USER, process.env.PASSWORD);
 createAdminUser(process.env.USER, process.env.PASSWORD);
 initializePassport(passport);
