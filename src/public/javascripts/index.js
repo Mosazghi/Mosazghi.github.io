@@ -16,12 +16,9 @@ const setFag = async () => {
   for (let i = 0; i < fagGrids.length; i++) {
     const fagGrid = fagGrids[i];
 
-    const res = await fetch(
-      "http://localhost:3000/admin/adminDashboard/alleFag",
-      {
-        method: "GET",
-      }
-    );
+    const res = await fetch("admin/adminDashboard/alleFag", {
+      method: "GET",
+    });
 
     const data = await res.json();
 
