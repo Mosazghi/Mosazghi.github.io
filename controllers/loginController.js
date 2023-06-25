@@ -5,7 +5,7 @@ const renderLogin = (req, res) => {
     console.log("USER", req.user);
     return res.redirect("/admin/adminDashboard");
   }
-  res.render("login.ejs");
+  res.render("login");
 };
 const renderAdminDashboard = asyncHandler(async (req, res) => {
   console.log(req.session);

@@ -39,8 +39,8 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.listen(PORT, "10.0.0.13", () => {
-  console.log(`Server started on port http://10.0.0.13:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server started on port http://localhost:${PORT}`);
 });
 
 module.exports = app;

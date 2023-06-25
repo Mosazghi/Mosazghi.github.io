@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "npm start server.js",
+    "build": "npm  build"
   },
   "dependencies": {
     "axios": "^1.4.0",
