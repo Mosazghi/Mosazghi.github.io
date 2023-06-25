@@ -32,28 +32,46 @@
 }
 
 .fag-grid {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1rem; */
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
-.fag-container {
-  background-color: #f5f5f5;
-  border-radius: 20px;
-  display: flex;
+.fag-grid .fag-container {
+  /* display: flex;
   flex-flow: column wrap;
-  transition: transform 0.2s ease-out;
-  flex: 1;
   justify-content: flex-end;
-  padding: 1rem;
+  flex: 1;
+  padding: 1rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  width: 300px;
+  margin: 0.5rem 0.5rem;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  transition: transform 0.2s ease-out;
 }
 
 .fag-navn {
   font-size: 1.7rem;
   font-weight: bold;
+}
+
+.fag-beskrivelse {
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 200px;
+  font-size: 18px;
 }
 
 .fag-karakter {
@@ -62,8 +80,8 @@
 }
 
 /*TODO FIX THIS*/
-.fag-grid > div > .fag-beskrivelse {
-  flex-grow: 115;
+.fag-beskrivelse {
+  flex: 1;
   padding: 1rem;
 }
 .fag-container:hover {
@@ -71,7 +89,11 @@
 }
 /* TODO -- nav instead? */
 .fag-info {
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
-  padding: 5px 10px;
+  gap: 180px;
+}
+.fag-info > a {
+  text-decoration: wavy;
 }

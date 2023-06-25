@@ -1,9 +1,7 @@
 const asyncHandler = require("express-async-handler");
 const Fag = require("../models/fagmodel");
 
-const renderAdmin = asyncHandler(async (req, res) => {
-  res.render("admin");
-});
+
 
 const getFag = asyncHandler(async (req, res) => {
   const fag = await Fag.findById(req.params.id);
@@ -36,7 +34,6 @@ const deleteFag = asyncHandler(async (req, res) => {});
 module.exports = {
   getFag,
   getAlleFag,
-  renderAdmin,
   setFag,
   updateFag,
   deleteFag,

@@ -13,15 +13,16 @@ form.addEventListener("submit", async (e) => {
     emnetype: formData.get("emnetype"),
   };
 
-  await fetch("http://localhost:3000/admin", {
+  const res = await fetch("http://localhost:3000/admin/adminDashboard", {
     method: "POST",
     headers: {
       "Content-type": "application/json; charset=UTF-8",
     },
     body: JSON.stringify(data),
   });
+  if (res.ok) {
+    console.log("OK!!");
+  } else {
+    console.log("NOT OK!!");
+  }
 });
-
-
-
-

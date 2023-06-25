@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="no">
   <head>
-    <title>Admin | Mosazghi</title>
+    <title>Admindashboard</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="./stylesheets/admin/admin.css"
+      href="../stylesheets/admin/admin.css"
     />
-    <link rel="icon" type="image/x-icon" href="./images/profile-icon.png" />
+    <link rel="icon" type="image/x-icon" href="../images/profile-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,8 +18,13 @@
     />
   </head>
   <body>
+    <% if (user) {%>
     <header>
-      <h1 class="tittel">Admin</h1>
+      <a href="/"><h1 class="tittel">Admindashboard</h1></a>
+      <h3 class="tittel">
+        Velkommen tilbake <%= user.username %>!
+        <a href="/admin/logout" method="post">Logge ut?</a>
+      </h3>
     </header>
     <div class="form-wrapper">
       <form action="#" method="post">
@@ -79,6 +84,9 @@
         </div>
       </form>
     </div>
-    <script src="./javascripts/admin.js"></script>
+    <% } else{%>
+    <h1>You don't have access! Please <a href="/admin/login">log-in</a></h1>
+    <%}%>
+    <script src="../javascripts/admin.js"></script>
   </body>
 </html>

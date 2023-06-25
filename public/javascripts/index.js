@@ -16,9 +16,12 @@ const setFag = async () => {
   for (let i = 0; i < fagGrids.length; i++) {
     const fagGrid = fagGrids[i];
 
-    const res = await fetch("http://localhost:3000/admin/alleFag", {
-      method: "GET",
-    });
+    const res = await fetch(
+      "http://localhost:3000/admin/adminDashboard/alleFag",
+      {
+        method: "GET",
+      }
+    );
 
     const data = await res.json();
 
@@ -52,15 +55,15 @@ function setFagDiv(emne, beskrivelse, karakter, link, emnetype) {
   const fag = document.createElement("div");
   fag.setAttribute("class", "fag-container");
 
-  const navn = document.createElement("div");
+  const navn = document.createElement("h2");
   navn.setAttribute("class", "fag-navn");
   navn.innerText = emne;
 
-  const beskriv = document.createElement("div");
+  const beskriv = document.createElement("p");
   beskriv.setAttribute("class", "fag-beskrivelse");
   beskriv.innerText = beskrivelse;
 
-  const kara = document.createElement("div");
+  const kara = document.createElement("h4");
   kara.setAttribute("class", "fag-karakter");
   kara.innerText = `Karakter: ${karakter}`;
 

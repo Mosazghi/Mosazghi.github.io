@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: dotted;
+  color: inherit;
+}
+
 body {
   background-image: url("../../images/background.jpg");
   background-repeat: no-repeat;
@@ -23,8 +28,7 @@ body {
   height: 100vh;
 }
 
-header h1 {
-  font-size: 40px;
+header {
   font-weight: bold;
   text-align: center;
 }
